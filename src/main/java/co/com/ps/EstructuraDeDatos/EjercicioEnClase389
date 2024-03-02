@@ -1,0 +1,58 @@
+package co.com.ps;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class EjercicioEnClase3 {
+    public static void main(String[] args) {
+
+
+        Scanner scanner;
+        scanner = new Scanner(System.in);
+
+
+        System.out.println("ingrese nombres estudiante 1");
+        double nom1 = scanner.nextInt();
+
+        System.out.println("ingrese nombres estudiante 2");
+        double nom2 = scanner.nextInt();
+
+        System.out.println("ingrese nombres estudiante 3");
+        double nom3 = scanner.nextInt();
+
+        System.out.println("ingrese nombres estudiante 4");
+        double nom4 = scanner.nextInt();
+
+        System.out.println("ingrese nombres estudiante 5");
+        double nom5 = scanner.nextInt();
+
+        System.out.println("ingrese nombres estudiante 6");
+        double nom6 = scanner.nextInt();
+
+        //double resultado =(numero1+numero2+numero3)/3;
+        //System.out.println("El promedio es:");
+        //System.out.println(resultado);
+
+        List<double> estudiantesLista = new ArrayList<>();
+
+        estudiantesLista.add(nom1);
+        estudiantesLista.add(nom2);
+        estudiantesLista.add(nom3);
+        estudiantesLista.add(nom4);
+        estudiantesLista.add(nom5);
+        estudiantesLista.add(nom6);
+
+        estudiantesLista.stream().forEach(System.out::println);
+
+
+
+
+
+
+
+
+
+
+    }
+}
